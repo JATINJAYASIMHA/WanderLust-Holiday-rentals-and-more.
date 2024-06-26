@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <h1 class="col-6 offset-3 mt-2 mb-2"  id="log">Log in to WanderLust</h1>
+    <div class="col-6 offset-3">
+
+        <form action="/login" method="POST" class="needs-validation"  id="custom" novalidate>
+            <div class="mb-3 ">
+                <label for="username" class="form-label">Username</label>
+                <input name="username" placeholder="Enter username" id="username" type="text" class="form-control" required>
+
+                
+            </div>
+
+           
+            <div class="mb-3 ">
+                <label for="password" class="form-label">Password</label>
+                <input name="password" placeholder="Enter password" id="password" type="password" class="form-control" required>
+
+               
+            </div>
+
+            <button class="btn edit-btn">Login</button>
+        </form>
+
+        <div style="margin-top: 10px" id="account">
+            <p>
+              Don't have an account?&nbsp;<a href="/signup"
+                >Sign Up</a
+              >
+            </p>
+        </div>
+
+        <div class="googleauth">
+            <button><a href="/auth/google"><img src="/images/google-login.jpg">Login with Google</a></button>
+        </div>
+          <br>
+
+        <div class="googleauth">
+            <button style="background-color: black;"><a href="/auth/github" style="color: aliceblue;"><img src="/images/github.svg">Login with Github</a></button>
+        </div>
+
+    </div>
+
+    <div style="margin-bottom: 40px"></div>
+</div>

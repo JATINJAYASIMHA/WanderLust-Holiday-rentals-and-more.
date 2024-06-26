@@ -1,0 +1,99 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row mt-3">
+        <div class="col-8 offset-2">
+            <h3>Edit your Listing</h3>
+            <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required>
+
+                    <div class="valid-feedback">Title looks good!</div>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea name="listing[description]" class="form-control" required><%= listing.description %> </textarea>
+
+                    <div class="invalid-feedback">Please enter a short description.</div>
+                </div>
+
+                <div class="mb-3">
+                    Original listing image: <br>
+                    <img src="<%= originalImageUrl %>" alt="listing_image" style="width: 150px; height: auto;">
+                </div>
+                
+                <div class="mb-3">
+                    <label for="image" class="form-label">Upload New Image</label>
+                    <input name="image"  type="file" class="form-control" >
+
+                    <div class="invalid-feedback">Image link should be valid.</div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required>
+
+                    <div class="invalid-feedback">Please enter a valid price.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="country" class="form-label">Country</label>
+                    <input name="listing[country]" value="<%= listing.country %>" type="text" class="form-control" required>
+
+                    <div class="invalid-feedback">Please enter the country name.</div>
+                </div>
+                
+            
+                <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control" required>
+
+                    <div class="invalid-feedback">Please enter valid location.</div>
+                </div>
+
+                <% for(categ of listing.category){ %>
+                    <p><%= categ %>&nbsp;&nbsp;</p>
+                    <% } %>
+              
+                    <!-- Category Selection -->
+                    <div class="mb-3">
+                      <label for="category" class="form-label">Select Category</label>
+              
+                      <select id="category" name="listing[category]" class="form-select border border-black border-opacity-50 mb-2" multiple style="font-size: 0.95rem">
+
+                        <option value="category" disabled>Please choose the category</option>
+                        <option value="Beachfront">Beachfront</option>
+                        <option value="Cabins">Cabins</option>
+                        <option value="Omg">OMG!</option>
+                        <option value="Lake">Lake-side</option>
+                        <option value="Design">Design</option>
+                        <option value="Amazing Pools">Amazing pools</option>
+                        <option value="Farms">Farms</option>
+                        <option value="Amazing Views">Amazing views</option>
+                        <option value="Rooms">Rooms</option>
+                        <option value="Lakefront">Lakefront</option>
+                        <option value="Tiny Homes">Tiny homes</option>
+                        <option value="Countryside">Countryside</option>
+                        <option value="Treehouse">Treehouse</option>
+                        <option value="Tropical">Tropical</option>
+                        <option value="National Parks">National parks</option>
+                        <option value="Castles">Castles</option>
+                        <option value="Camping">Camping</option>
+                        <option value="Top Of The World">Top of the world</option>
+                        <option value="Luxe">Luxury</option>
+                        <option value="Iconic Cities">Iconic cities</option>
+                        <option value="Earth Homes">Earth homes</option>
+                      </select>
+                    </div>
+        
+                <br>
+                <button  class="btn btn-dark edit-btn mt-3">Edit</button>
+            </form>
+            <br>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+    
+</body>
