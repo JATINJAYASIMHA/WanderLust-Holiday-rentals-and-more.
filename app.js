@@ -39,7 +39,7 @@ main().then(()=>{
 });
 
 async function main() {
-    await mongoose.connect(dbUrl);
+     mongoose.connect(dbUrl);
 }
 
 app.set("view engine", "ejs");
