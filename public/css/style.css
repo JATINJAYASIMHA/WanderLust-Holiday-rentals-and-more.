@@ -761,7 +761,7 @@ footer {
 
   #show-body {
     width: 180% !important;
-    margin-left: -130px;
+    margin-left: -10rem !important;
     padding-right: 1.5rem;
     margin-right: 2rem;
   }
