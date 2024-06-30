@@ -763,13 +763,14 @@ footer {
     width: 180% !important;
     margin-left: -130px;
     padding-right: 1.5rem;
+    margin-right: 2rem;
   }
 
   .show-img {
     height: 34vh;
-    width: 110% !important;
-    margin-left: -16px !important;
-    margin-right: 1rem;
+    width: 100% !important;
+    margin-left: -8px !important;
+    margin-right: 2rem !important;
   }
 
   #comments textarea {
