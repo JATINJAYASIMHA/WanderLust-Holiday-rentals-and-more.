@@ -769,7 +769,7 @@ footer {
   .show-img {
     height: 34vh;
     width: 100% !important;
-    margin-left: -8px !important;
+    margin-left: -16px !important;
     margin-right: 2rem !important;
   }
 
