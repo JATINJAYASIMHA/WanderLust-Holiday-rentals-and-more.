@@ -737,6 +737,7 @@ footer {
     overflow-x: hidden;
     offset: none;
     margin-top: 80px;
+    
   }
 
   .container-fluid {
@@ -761,12 +762,14 @@ footer {
   #show-body {
     width: 180% !important;
     margin-left: -130px;
+    padding-right: 1.5rem;
   }
 
   .show-img {
     height: 34vh;
     width: 110% !important;
     margin-left: -16px !important;
+    margin-right: 1rem;
   }
 
   #comments textarea {
