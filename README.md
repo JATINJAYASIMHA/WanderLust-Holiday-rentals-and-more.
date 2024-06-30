@@ -33,3 +33,6 @@ Additional Features:
 * Google and Github Authentication for fast login or sign-up for a user.
 
 My ability to handle all aspects of full-stack web development, from designing an eye-catching front end to maintaining the back end and database, is demonstrated by this project. It enables users to effortlessly and securely look for properties and utilize the main features of airbnb, a similar website.
+
+I have deployed my project using render connected with the database of MongoDB Atlas.
+Live: https://wanderlust-holiday-rentals-and-more.onrender.com
