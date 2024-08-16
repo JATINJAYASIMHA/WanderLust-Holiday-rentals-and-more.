@@ -38,3 +38,5 @@ My ability to handle all aspects of full-stack web development, from designing a
 
 I have deployed my project using render connected with the database of MongoDB Atlas.<br>
 Live: https://wanderlust-holiday-rentals-and-more.onrender.com/listings
+
+ Author: **JATINJAYASIMHA V N**
